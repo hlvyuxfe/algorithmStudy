@@ -1,5 +1,5 @@
 import unittest
-from Solution import Solution
+from ThreeSumClosest import Solution
 
 
 class Solution_test(unittest.TestCase):
