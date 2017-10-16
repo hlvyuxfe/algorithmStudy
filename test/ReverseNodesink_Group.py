@@ -39,7 +39,7 @@ class Solution(object):
         while temp!=None:
             i+=1
             temp = temp.next
-            if i==k:
+            if i==k and temp!=None:
                 i=0
                 head=reversek(head,k)
                 temp = head

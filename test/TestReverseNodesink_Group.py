@@ -23,10 +23,12 @@ class Test_ReverseNodesink_Group(unittest.TestCase):
         printListNode(temp)
 
     def test_ReverseNodesink_Group(self):
-        printListNode(Solution().reverseKGroup(createListNode([]),0))
+        printListNode(Solution().reverseKGroup(createListNode([]),0)) 
+        printListNode(Solution().reverseKGroup(createListNode([1,2,3]),2))
+
         printListNode(Solution().reverseKGroup(createListNode([1,2,3,4,5,6,7,8,9,10]),1))
         printListNode(Solution().reverseKGroup(createListNode([1,2,3,4,5,6,7,8,9,10]),2))
-        printListNode(Solution().reverseKGroup(createListNode([1,2,3,4,5,6,7,8,9,10]),3))
+        printListNode(Solution().reverseKGroup(createListNode([1,2,3,4,5,6,7,8,9,10,11,12]),3))
         printListNode(Solution().reverseKGroup(createListNode([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]),4))
         printListNode(Solution().reverseKGroup(createListNode([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]),16))
         printListNode(Solution().reverseKGroup(createListNode([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]),17))
