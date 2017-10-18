@@ -13,10 +13,10 @@ class Solution(object):
             return 0
         length = len(haystack)
         i=0
-        while i<length:
-            if haystack[i]==needle[0] and len(needle)<=len(haystack[i:]):
+        while i<length and len(needle)<=len(haystack[i:]):
+            if haystack[i]==needle[0]:
                 j=1
-                while i+j<len(haystack) and j<len(needle) and haystack[i+j] == needle[j]:
+                while j<len(needle) and haystack[i+j] == needle[j]:
                     j+=1
                 if j==len(needle):
                     return i
